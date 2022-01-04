@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 文字コードの宣言 -->
+    <meta charset="UTF-8">
+    <!-- ページのタイトル(ブラウザのタイトルバーに表示) -->
+    <title>Clock</title>
+    <!-- スタイルシート(CSS)読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript読み込み -->
+    <script src='js/clock.js'></script>
+    </head>
+    <body>
+        <!-- 時計枠 -->
+    <div id="clock_frame">
+        <!-- 時刻部分 -->
+        <span id="clock_time"></span>
+        <!-- 日付部分 -->
+        <span id="clock_date"></span>
+       
+    </div>
+    <!--日本国旗枠-->
+    <div class = "flags" >
+        <!--ボタンとなる日本国旗(左)の表示-->
+        <img src = "https://www.abysse.co.jp/flags/wp-content/uploads/2019/08/jp.png" alt = "日本国旗" class = "Japan1" id = "lists">
+        <!--デフォルトの日本国旗(右)-->
+        <img src = "https://www.abysse.co.jp/flags/wp-content/uploads/2019/08/jp.png" alt = "日本国旗" class = "Japan2">
+    </div>
+    　　<!--ボタンを押すと表示される国旗-->
+        <ul class = "flag-list" id = "pull-down">
+            <!--アメリカ国旗-->
+            <li><a href = "#"><img src = "https://freesozai.jp/sozai/nation_flag/ntf_401.png" class = "Amerika"></a></li>
+            <!--イギリス国旗-->
+            <li><a href = "#"><img src = "https://freesozai.jp/sozai/nation_flag/ntf_305.png" class = "Britain"></a></li>
+        </ul>
+       
+    <!--会社のロゴ-->
+    <div class = "logo" >
+        <!--左に表示する会社のロゴ-->
+    　　<img src = "https://www.nmp.co.jp/sites/default/images/corpo/common/img/icon/logo-01.png" alt = "写真ください" class = "logo1">
+    　　<!--右に表示する会社のロゴ-->
+    　　<img src = 'https://www.nmp.co.jp/sites/default/images/corpo/common/img/icon/logo-01.png' alt = "写真ください" class = "logo2">
+    </div>
+    </body>
+</html>
