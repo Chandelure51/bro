@@ -1,0 +1,115 @@
+/*body要素*/
+body
+{
+    /* 文字色を黒に */
+    color: black;
+    /* 背景色を白に */
+    background-color: white;
+}
+
+/* id = "clock_frame" のdiv要素 */
+div#clock_frame
+{
+    /* 横幅を親要素であるbodyの100%(同じ幅)にする */
+    width: 100%;
+}
+
+/* span要素のデフォルト */
+span
+{
+    /* 本来はインライン要素であるspanをブロック要素として扱う */
+    display: block;
+    /* ここでは親要素であるdivの内部で右に寄せて配置させる */
+    text-align: center;
+    /* 横幅を親要素であるdivの100%にする */
+    width: 100%;
+    /* フォントの種類を一番上で指定したGoogle Webフォントに設定する */
+    font-family:"HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+/* id = "clock_time" のspan要素 */
+span#clock_time
+{
+    /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の2倍にする */
+    font-size: 2em;
+    /*表示場所をページトップから親要素であるdivで設定されたサイズ(px)の0.2倍の位置にする*/
+    padding-top: 0.2em;
+}
+
+/* id = "clock_date" のspan要素 */
+span#clock_date
+{
+    /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の0.5倍にする */
+    font-size: 0.5em;
+    /* 右のパディングの幅を親要素であるdivで設定されたフォントサイズ(px)の0.5倍にする */
+    padding-right: 0.5em;
+    /*表示場所をid="clock_time"から親要素であるdivで設定されたサイズだけ下の位置に配置する*/
+    padding-top: 1em;
+}
+
+/* class = "flags" のdiv要素 */
+.flags{
+    /* 横幅を親要素であるbodyの100%(同じ幅)にする */
+    width: 100%;
+    /*子要素を横並びにする*/
+    display: flex;
+    /*両端の余白と要素間の余白が1:2になるようにする*/
+    justify-content: space-around;
+　　
+}
+
+/* class = "Japan1" のdiv要素*/
+.Japan1{
+    /* 横幅を親要素であるbodyの10%にする */
+    width: 10%;
+    /* 縦幅を親要素であるbodyの5%にする */
+    height: 5%;
+    /*上部に20pxの余白をあける*/
+    padding-top: 20px;
+}
+
+/* class = "Japan2" のdiv要素*/
+.Japan2{
+    /* 横幅を親要素であるbodyの10%にする */
+    width: 10%;
+    /* 縦幅を親要素であるbodyの5%にする */
+    height: 5%;
+    /*上部に20pxの余白をあける*/
+    padding-top: 20px;
+}
+
+/* ulのclass = "flag-list" のdiv要素*/
+.flag-list{
+    /*デフォルトのリストスタイルを無効にする*/
+    list-style: none;
+    /*要素を非表示にする*/
+    display: none;
+   
+    padding-left: 21%;
+}
+
+/* class = "Amerika" のdiv要素*/
+.Amerika{
+    /* 横幅を親要素であるbodyの10%にする */
+    width: 10%;
+    /* 縦幅を親要素であるbodyの5%にする */
+    height: 5%;
+}
+
+/* class = "Britain" のdiv要素*/
+.Britain{
+    /* 横幅を親要素であるbodyの10%にする */
+    width: 10%;
+    /* 縦幅を親要素であるbodyの5%にする */
+    height: 5%;
+}
+
+/* class = "logo" のdiv要素*/
+.logo{
+    /*子要素を横並びにする*/
+    display: flex;
+    /*両端の余白と要素間の余白が1:2になるようにする*/
+    justify-content: space-around;
+    /*表示場所をid="clock_time"から親要素であるdivで設定されたサイズだけ下の位置に配置する*/
+    padding-top: 4em;
+}
